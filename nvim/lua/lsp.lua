@@ -130,5 +130,6 @@ vim.lsp.enable('rust-analyzer', {
     end,
     settings = {
         ["rust-analyzer"] = {}
-    }
+    },
 })
+

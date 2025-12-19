@@ -29,7 +29,7 @@ vim.opt.splitright = true                   -- when vertically split open new wi
 
 
 -- indents --
-vim.opt.expandtab = false                    -- replace Tabs with spaces
+vim.opt.expandtab = true                    -- replace Tabs with spaces
 vim.opt.tabstop = 2                         -- number of spaces for tabs
 vim.opt.shiftwidth = 2                      -- number of spaces when auto-adding margins
 vim.opt.softtabstop = 2                     -- number of spaces during autotabulation
@@ -48,7 +48,7 @@ vim.opt.infercase = true                    -- save register when auto-complete
 -- performance --
 vim.opt.laststatus = 3                      -- enable global status line
 vim.opt.ruler = false                       -- disable character ruler
-vim.opt.showtabline = 0                     -- disable tab line
+vim.opt.showtabline = 1                     -- enable tab line
 vim.opt.showmode = false                    -- disable display mode 
 vim.opt.wrap = true                         -- enable line wrapping
 vim.opt.linebreak = true                    -- enable wrap only by words

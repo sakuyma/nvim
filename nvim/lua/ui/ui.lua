@@ -1,13 +1,13 @@
 return {
   -- theme
---  {
---    "catppuccin/nvim",
---    name = "catppuccin",
---    priority = 1000,
---    config = function()
---      require("theme").setup()
- --   end,
---  },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      require("theme").setup()
+   end,
+  },
   
   -- Bufferline (вкладки)
   {

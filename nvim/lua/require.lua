@@ -16,7 +16,7 @@ require("code.linters")
 require("lsp")
 
 -- ui --
---require("ui.theme")
+require("ui.theme")
 require("ui.tabs")
 require("ui.statusline")
 require("ui.ui-improvement")

@@ -1,4 +1,4 @@
--- general options --
+--  general options --
 local key = vim.keymap.set                  -- set local variable
 vim.g.mapleader = " "                       -- set <leader> key
 
@@ -64,3 +64,21 @@ key("n", "<leader>gs", builtin.git_status)
 key("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>")
 key("n", "<leader>xt", "<cmd>Trouble todo toggle<cr>")
 key("n", "<leader>xb", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>")
+
+-- tabs --
+key('n', '<Tab>','<Cmd>BufferLineCycleNext<CR>', { noremap = true, silent = true })
+key('n', '<S-Tab>','<Cmd>BufferLineCycleNext<CR>', { noremap = true, silent = true })
+key('n', 'tt', '<Cmd>BufferLineCycleNext<CR>', { noremap = true, silent = true })
+
+key('n', '<leader>rn', ':file ', { noremap = true, desc = 'Rename buffer (display name)' })
+key('n', '<leader>tn', '<Cmd>tabnew<CR>', { noremap = true,silent = true, desc = 'New tab' })
+
+key('n', '<leader>td', '<Cmd>tab split<CR>', { noremap = true, silent = true, desc = 'Duplicate tab' })
+key('n', '<leader>te', ':tabedit ', { noremap = true, desc = 'Edit file in new tab'
+})
+key('n', '<leader>tc', '<Cmd>tabclose<CR>', { desc = 'Close tab' })
+key('n', '<leader>to', '<Cmd>tabonly<CR>', { desc = 'Close other tabs' })
+key('n', '<leader>tm', '<Cmd>tabmove ', { desc = 'Move tab to position' })
+
+key('n', '<leader>lg', '<cmd>LazyGit<cr>', { desc = 'LazyGit' })
+key('n', '<bs>', ':edit #<cr>', { silent = true })
