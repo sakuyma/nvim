@@ -20,7 +20,6 @@ vim.diagnostic.config {
 local cmp = require("cmp")
 local lspkind = require("lspkind")
 
-
 cmp.setup {
   snippet = {
     expand = function(args)
@@ -64,10 +63,38 @@ vim.opt.pumheight = 6
 require("mason").setup {
   automatic_installation = true,
   ensure_installed = {
+    -- LSP --
     "rust-analyzer",
-    "codelldb",
     "clangd",
     "pyright",
+    "lua_ls",
+    "stylua",
+    "typescript-language-server",
+    "marksman",
+    "ltex-ls",
+    "grammarly-languageserver",
+    "html-lsp",
+    "css-lsp", 
+    "json-lsp",
+    
+    -- Debugger     
+    "codelldb",
+    
+    -- Formatter
+    "black", -- python
+    "isort", --python
+    "rustfmt", -- rust
+    "clang-format", -- c like
+    "stylua", -- lua
+    "prettier", -- js/ts
+
+    -- Linter
+    "ruff",
+    "eslint_d",      -- js/ts
+    "clang-tidy",    -- C/C++
+    "luacheck",      -- Lua
+    "hadolint",      -- Dockerfile
+    "stylelint"      -- css
   },
   ui = {
     check_outdated_packages_on_open = true,
@@ -93,8 +120,8 @@ vim.lsp.enable('pyright', {
   }
 }
 
-
 })
+
 vim.lsp.enable('clangd', {
 capabilities = capabilities,
   cmd = {
@@ -132,4 +159,10 @@ vim.lsp.enable('rust-analyzer', {
         ["rust-analyzer"] = {}
     },
 })
-
+vim.lsp.enable('lua_ls')
+vim.lsp.enable('html')
+vim.lsp.enable('jsonls')
+vim.lsp.enable('cssls')
+vim.lsp.enable('marksman')
+vim.lsp.enable('grammarly')
+vim.lsp.enable('ltex')

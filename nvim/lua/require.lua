@@ -11,10 +11,7 @@ require("code.outline")
 require("code.syntax")
 require("code.vcs")
 require("code.linters")
-
--- lsp --
-require("lsp")
-
+require("code.lsp")
 -- ui --
 require("ui.theme")
 require("ui.tabs")

@@ -233,5 +233,19 @@ require("lazy").setup {
       -- setting the keybinding for LazyGit with 'keys' is recommended in
       -- order to load the plugin when the command is run for the first time
     },
+    -- AI
+    {
+      "jackMort/ChatGPT.nvim",
+        event = "VeryLazy",
+        config = function()
+          require("chatgpt").setup()
+        end,
+      dependencies = {
+        "MunifTanjim/nui.nvim",
+        "nvim-lua/plenary.nvim",
+        "folke/trouble.nvim", -- optional
+        "nvim-telescope/telescope.nvim"
+      },
+    },
   },
 }
