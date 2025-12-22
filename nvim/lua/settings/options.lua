@@ -17,7 +17,9 @@ vim.opt.langmap:append {
 vim.opt.number = true                       -- enable absolute numbering of current line
 vim.opt.relativenumber = true               -- enable relative line numbering
 vim.opt.numberwidth = 2                     -- line number width
-vim.opt.fillchars = { eob = " ", }          -- interface symbols
+vim.opt.fillchars = {
+  eob = " ",
+}                                           -- interface symbols
 vim.opt.scrolloff = 10                      -- minimum number of lines above/below cursor when scrolling
 vim.opt.smoothscroll = true                 -- enable smooth scrolling
 vim.opt.cursorline = true                   -- highlight cursor line
