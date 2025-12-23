@@ -11,3 +11,4 @@ require("toggleterm").setup {
   persist_size = true,
   close_on_exit = false,
 }
+

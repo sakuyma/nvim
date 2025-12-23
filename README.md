@@ -1,3 +1,0 @@
-# nvim
-
-thx to whyhilde

@@ -46,7 +46,7 @@ key("v", "<leader>hr", "<cmd>Gitsigns reset_hunk<cr>")
 
 
 -- explorer --
-key("n", "<leader>n", "<cmd>NvimTreeToggle<cr>", { silent = true })
+key("n", "<leader>n", "<cmd>lua Snacks.picker.explorer()<cr>", { silent = true })
 
 
 -- finder --
