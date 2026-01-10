@@ -20,7 +20,7 @@ require("dashboard").setup {
     header = header(),
     center = {
       {
-      desc = "New file",
+      desc = " New file",
       desc_hl = "Comment",
       key = "e",
       key_hl = "Comment",
@@ -28,7 +28,7 @@ require("dashboard").setup {
       action = ":enew",
       },
       {
-      desc = "Explorer",
+      desc = " Explorer",
       desc_hl = "Comment",
       key = "n",
       key_hl = "Comment",
@@ -36,7 +36,7 @@ require("dashboard").setup {
       action = ":lua Snacks.explorer()",
       },
       {
-      desc = "Find file",
+      desc = " Find file",
       desc_hl = "Comment",
       key = "f",
       key_hl = "Comment",
@@ -44,7 +44,7 @@ require("dashboard").setup {
       action = ":Telescope find_files",
       },
       {
-      desc = "Recently",
+      desc = " Recently",
       desc_hl = "Comment",
       key = "r",
       key_hl = "Comment",
@@ -52,7 +52,7 @@ require("dashboard").setup {
       action = ":Telescope oldfiles",
       },
       {
-      desc = "Quit                       ",
+      desc = "󰈆 Quit",
       desc_hl = "Comment",
       key = "q",
       key_hl = "Comment",
