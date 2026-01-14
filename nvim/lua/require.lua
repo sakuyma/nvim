@@ -12,6 +12,7 @@ require("code.syntax")
 require("code.vcs")
 require("code.linters")
 require("code.lsp")
+require("code.ai")
 
 -- ui --
 require("ui.theme")

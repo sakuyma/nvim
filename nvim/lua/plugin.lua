@@ -96,10 +96,6 @@ require("lazy").setup {
       },
     },
     {
- 	    'nvim-mini/mini.animate',
-    }, 
-    -- vcs
-    {
       "lewis6991/gitsigns.nvim",
       event = {
         "BufReadPre",
@@ -153,9 +149,9 @@ require("lazy").setup {
     },
     -- theme --
     {
-      "catppuccin/nvim",
-      lazy = false,
-			priority = 1000
+        "catppuccin/nvim",
+        lazy = false,
+        priority = 1000
     },
 		{
       'akinsho/bufferline.nvim',
@@ -214,7 +210,7 @@ require("lazy").setup {
     },
     -- AI
     {
-      "folke/sidekick.nvim",
-    },
-  },
-}
+  	"folke/sidekick.nvim",
+}, 
+ },
+    }

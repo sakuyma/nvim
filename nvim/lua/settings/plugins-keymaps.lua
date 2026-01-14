@@ -80,5 +80,11 @@ key('n', '<leader>tc', '<Cmd>tabclose<CR>', { desc = 'Close tab' })
 key('n', '<leader>to', '<Cmd>tabonly<CR>', { desc = 'Close other tabs' })
 key('n', '<leader>tm', '<Cmd>tabmove ', { desc = 'Move tab to position' })
 
+
+-- Open LazyGit menu -- 
 key('n', '<leader>lg', '<cmd>lua Snacks.lazygit()<cr>', { desc = 'LazyGit' })
 key('n', '<bs>', ':edit #<cr>', { silent = true })
+
+-- Open Sidekick (Ai) menu --
+
+key("n", "<leader>sc", "<cmd>Sidekick cli toggle<cr>", { silent = true, desc = "Toggle Sidekick CLI" })
