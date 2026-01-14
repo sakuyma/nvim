@@ -1,6 +1,7 @@
 # Sakuyma's Neovim Configuration
 
-![Screenshot](./screenshot.png)
+<img src="screenshot.png">
+
 
 Welcome to my Neovim setup!
 
