@@ -211,6 +211,10 @@ require("lazy").setup {
     -- AI
     {
   	"folke/sidekick.nvim",
-}, 
+    },
+    -- Colorizer
+    {
+        "norcalli/nvim-colorizer.lua",
+    },
  },
     }
