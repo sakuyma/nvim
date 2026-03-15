@@ -28,7 +28,7 @@ require("utils.finder")
 require("utils.terminal")
 require("utils.todocomments")
 require("utils.troubleshoots")
-
+require("utils.sessions")
 
 -- settings --
 require("settings.autocmds")
